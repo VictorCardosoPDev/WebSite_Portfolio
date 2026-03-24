@@ -1,0 +1,190 @@
+/* Estilos da Página de Projetos */
+
+.projetos-page {
+    background: #0b1120;
+    padding-top: 40px;
+}
+
+.section-header {
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+.badge {
+    background: rgba(56, 189, 248, 0.1);
+    color: var(--primary-color);
+    padding: 5px 15px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.section-header h1 {
+    font-size: 3rem;
+    color: #f1f5f9;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+
+/* Grid de Projetos */
+
+main.container {
+    padding-top: 50px; /* Um respiro extra além do que o body já oferece */
+    margin-top: 20px;
+}
+.project-grid {
+    display: grid;
+    /* Aumentamos de 300px/320px para 350px para dar mais largura a cada card */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+    gap: 2.5rem;
+}
+
+/* Card Estilo Glassmorphism */
+.project-card {
+    background: rgba(30, 41, 59, 0.4);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-color);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Cabeçalho do Card (Video) */
+.card-header {
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    background: #1e293b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-header video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .card-header img {
+    transform: scale(1.1);
+}
+
+.play-overlay {
+    position: absolute;
+    font-size: 2.5rem;
+    color: white;
+    opacity: 0.7;
+}
+
+/* Corpo do Card */
+.card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Faz o corpo esticar para ocupar o espaço vazio */
+}
+
+/* Esconde o Play quando o vídeo está tocando */
+.video-is-playing .play-overlay {
+    opacity: 0;
+    pointer-events: none; /* Impede cliques acidentais sobre o play invisível */
+}
+.card-body h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.features {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.features li {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    color: #94a3b8;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.features li i {
+    color: var(--primary-color);
+    width: 20px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 8px;        
+    margin-top: 1.5rem;
+}
+
+.tags span {
+    font-size: 0.75rem;
+    background: rgba(56, 189, 248, 0.1);
+    color: var(--primary-color);
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    white-space: nowrap;
+}
+
+/* Botão GitHub */
+.btn-github {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--primary-color);
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8rem;
+    transition: 0.3s;
+    margin-top: auto; 
+}
+
+.btn-github:hover {
+    background: var(--primary-color);
+    color: var(--bg-color);
+}
+
+/* Badge de Status do Projeto */
+.project-badge {
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-transform: uppercase;
+}
+
+/* Cor para Projetos Autorais (Azul) */
+.project-badge.autoral {
+    color: var(--primary-color);
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
+}
+
+/* Cor para Projetos Colaborativos (Roxo) */
+.project-badge.colaborativo {
+    color: #a78bfa;
+    text-shadow: 0 0 10px rgba(167, 139, 250, 0.3);
+}

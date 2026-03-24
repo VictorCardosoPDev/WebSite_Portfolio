@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Metadados essenciais -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor | Dev & Distributed Systems</title>
+
+    <!-- Arquivo CSS local -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Biblioteca de ícones Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Cabeçalho fixo com menu de navegação -->
+    <header>
+        <nav>
+            <div class="logo">Victor<span>.dev</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre Mim</a></li>
+                <li><a href="#experience">Experiências</a></li>
+                <li><a href="./Projetos/projetos.html">Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Hero com carrossel de slides -->
+    <section id="home" class="hero">
+        <div class="carousel-title-overlay">
+            <span class="badge">MEU TRABALHO</span>
+            <h2 class="main-title">Alguns Projetos</h2>
+        </div>
+        <div class="carousel-container">
+            <!-- Slide ativo inicial -->
+            <a href="./Projetos/projetos.html" class="carousel-item active">
+                <img src="./assets/food_store_1.png" alt="Food Store">
+                <div class="carousel-caption">
+                    <h1>Angular: Sabores do Brasil</h1>
+                    <p>Angular Development</p>
+                </div>
+            </a>
+
+            <!-- Segundo slide do carrossel -->
+            <a href="./Projetos/projetos.html" class="carousel-item">
+                <img src="./assets/liricostudio.png" alt="Desenvolvimento Flutter">
+                <div class="carousel-caption">
+                    <h1>Lírico Estúdio</h1>
+                    <p>Web Development</p>
+                </div>
+            </a>
+
+            <!-- Controles manuais do carrossel -->
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="about" class="about container">
+        <div class="section-header">
+            <h2 class="main-title">Sobre Mim</h2>
+        </div>
+
+        <div class="about-wrapper" id="about">
+            <aside class="about-aside">
+                <div class="profile-card card-style">
+                    <img src="./assets/foto de perfil.jpeg" alt="Victor Pinto" class="profile-photo">
+
+                    <div class="profile-details">
+                        <h3>Victor Cardoso Pinto</h3>
+                        <p>28 Anos | Desenvolvedor Full Stack</p>
+                    </div>
+
+                    <div class="aside-links social-links">
+                        <a href="https://github.com/VictorCardosoPDev" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="http://lattes.cnpq.br/0878650862421753" target="_blank" title="Currículo Lattes"><i class="fas fa-microscope"></i></a>
+                        <a href="https://www.linkedin.com/in/victor-cardoso-48a8a4217/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://wa.me/5551983330666" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <div class="education-card card-style">
+                    <div class="education-header">
+                        <i class="fas fa-graduation-cap education-icon"></i>
+                        <h3>Formação & Trajetória</h3>
+                    </div>
+
+                    <div class="education-item">
+                        <div class="edu-main-info">
+                            <strong>Bacharelado em Ciência da Computação (Cursando)</strong>
+                            <span class="dates">Ago 2023 — Out 2027</span>
+                        </div>
+                        <p class="institution">Universidade La Salle</p>
+                        <div class="edu-tags">
+                            <span>Python</span> <span>POO</span> <span>MySQL</span> <span>Machine Learning</span> <span>Web Dev</span>
+                        </div>
+                    </div>
+
+                    <hr class="edu-divider">
+
+                    <div class="education-item">
+                        <div class="edu-main-info">
+                            <strong>Graduação em Design Gráfico</strong>
+                            <span class="dates">Jan 2017 — Dez 2021</span>
+                        </div>
+                        <p class="institution">FADERGS</p>
+                        <div class="edu-tags design-tags">
+                            <span>UX/UI</span> <span>HTML5</span> <span>CSS3</span>
+                        </div>
+                    </div>
+
+                    <hr class="edu-divider">
+
+                    <div class="education-item">
+                        <div class="edu-main-info">
+                            <strong>Tecnologo em Design Gráfico</strong>
+                            <span class="dates">Ago 2019 — Jan 2020</span>
+                        </div>
+                        <p class="institution">SENAC Tech</p>
+                        <div class="edu-tags design-tools">
+                            <span>Figma</span> <span>Photoshop</span> <span>Illustrator</span> <span>CorelDraw</span>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <article class="about-content card-style">
+                <div class="content-body">
+                    <h3>Desenvolvedor Focado no Ecossistema de Inovação</h3>
+
+                    <p>
+                        Sou graduando em <strong>Ciência da Computação</strong> pela Universidade La Salle, com uma trajetória focada na interseção entre o rigor da pesquisa acadêmica e a agilidade do desenvolvimento de mercado. Atualmente, ocupo a posição de <strong>Pesquisador e Líder de Inovação (IFRN)</strong>, onde atuo na arquitetura de sistemas distribuídos e na articulação de portfólios tecnológicos, com produção científica registrada na plataforma <strong>CNPq/Lattes</strong>.
+                    </p>
+
+                    <p>
+                        Minha experiência prática foi consolidada na <strong>Sispro</strong>, onde atuei por 6 meses no desenvolvimento e manutenção de ecossistemas comerciais complexos. Durante esse período, refinei minhas habilidades em stacks modernas como <strong>Angular, .NET, C# e Python</strong>, garantindo a performance de aplicações web e a robustez de regras de negócio no backend.
+                    </p>
+
+                    <p>
+                        Sou um entusiasta do trabalho colaborativo e do versionamento estratégico (<strong>Git/GitHub</strong>), possuindo expertise técnica na resolução de conflitos e na gestão de repositórios profissionais. Minha missão é transformar desafios complexos em soluções de alto impacto, unindo a visão analítica da ciência ao pragmatismo do <strong>Desenvolvimento Full Stack</strong> para alavancar novos negócios.
+                    </p>
+
+                    <div class="tech-competencias">
+                        <h4 class="competencias-title"><i class="fas fa-terminal"></i> Competências Técnicas</h4>
+                        <div class="competencias-wrapper">
+                            <p><strong>Stack Principal:</strong> C#, .NET, Python, JavaScript, TypeScript, Angular, HTML, CSS, SQL.</p>
+                            <p><strong>Ferramentas & Fluxo:</strong> Git, GitHub, Visual Studio, Visual Studio Code.</p>
+                            <p><strong>Conceitos:</strong> UX/UI Design, Usabilidade e Programação Orientada a Objeto (POO).</p>
+                        </div>
+                    </div>
+
+                    <p class="mission-text">Minha missão é utilizar a tecnologia como alavanca para <strong>alcançar novos negócios</strong></p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="experience" class="experience container">
+        <div class="section-header">
+            <span class="badge">TRAJETÓRIA</span>
+            <h2 class="main-title">Experiências Profissionais</h2>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Jan 2026 — Presente</div>
+                <div class="timeline-content card-style">
+                    <h3>Pesquisador e Líder de Inovação</h3>
+                    <span class="company">Ecossistema de Inovação | IFRN</span>
+                    <p>Atuação na vanguarda da pesquisa tecnológica, focando na articulação de portfólios de inovação e no desenvolvimento de soluções para sistemas distribuídos. Registro e documentação de produção científica na plataforma CNPq.</p>
+                    <div class="tags">
+                        <span>Pesquisa Científica</span> <span>Lattes CNPq</span> <span>Inovação Estruturada</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Fev 2026 — Mar 2026</div>
+                <div class="timeline-content card-style">
+                    <h3>Desenvolvedor Colaborador (Freelancer)</h3>
+                    <span class="company">Expositores Bueno</span>
+                    <p>Atuação no desenvolvimento e manutenção de sistemas internos. Foco em versionamento de código utilizando Git e GitHub, sendo responsável pela resolução de conflitos complexos (merges) e garantia de fluxo contínuo de atualizações no repositório da empresa.</p>
+                    <div class="tags">
+                        <span>Git</span> <span>GitHub</span> <span>Trabalho em Equipe</span> <span>Versionamento</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Jun 2025 — Out 2025</div>
+                <div class="timeline-content card-style">
+                    <h3>Desenvolvedor Voluntário (SIMEC)</h3>
+                    <span class="company">Casa das Artes Villa Mimosa</span>
+                    <p>Atuação no desenvolvimento do Sistema Integrado de Monitoramento, Execução e Controle (SIMEC). Responsável pela gestão de informações, organização do público participante e execução de cronogramas para atividades culturais e eventos.</p>
+                    <div class="tags">
+                        <span>Gestão de Dados</span> <span>Sistemas de Monitoramento</span> <span>Cultura</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">Mar 2024 – Set 2024</div>
+                <div class="timeline-content card-style">
+                    <h3>Estagio Sispro - Desenvolvedor Júnior</h3>
+                    <span class="company">Sishub - Inteligencia em Sistemas para Gestão LTDA</span>
+                    <p>Atuação no desenvolvimento e manutenção de sistemas comerciais utilizando tecnologias como C#, .NET, Angular, JavaScript e SQL. Responsável por colaborar em projetos de melhoria de performance e interface, auxiliar na correção de bugs e prestar suporte técnico a clientes internos.</p>
+                    <div class="tags">
+                        <span>C#</span> <span>.NET</span> <span>Angular CLI</span> <span>SQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Victor Cardoso Pinto. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script do carrossel -->
+    <script src="index.js"></script>
+</body>
+
+</html>
